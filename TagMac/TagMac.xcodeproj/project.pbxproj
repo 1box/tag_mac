@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB46D2F01BF5654D0037BD46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D2EF1BF5654D0037BD46 /* AppDelegate.swift */; };
+		CB46D3051BF5654D0037BD46 /* TagMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D3041BF5654D0037BD46 /* TagMacTests.swift */; };
+		CB46D3101BF5654D0037BD46 /* TagMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */; };
+		CB46D3211BF568F70037BD46 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB46D3201BF568F70037BD46 /* CloudKit.framework */; };
+		CBCC7BF71BF56DD30048646A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7BE91BF56DD30048646A /* ContentViewController.swift */; };
+		CBCC7BF81BF56DD30048646A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7BEA1BF56DD30048646A /* MainViewController.swift */; };
+		CBCC7BF91BF56DD30048646A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7BEE1BF56DD30048646A /* Assets.xcassets */; };
+		CBCC7BFA1BF56DD30048646A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7BEF1BF56DD30048646A /* Main.storyboard */; };
+		CBCC7BFD1BF56DD30048646A /* TagMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7BF41BF56DD30048646A /* TagMac.xcdatamodeld */; };
+		CBCC7C011BF56E130048646A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7C001BF56E130048646A /* LeftViewController.swift */; };
+		CBCC7C041BF56E1E0048646A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7C021BF56E1E0048646A /* RightViewController.swift */; };
+		CBCC7C071BF56E2C0048646A /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7C061BF56E2C0048646A /* MiddleViewController.swift */; };
+		CBF82C0F1BF5716600219536 /* TagMac.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = CBF82C0E1BF5716600219536 /* TagMac.entitlements */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB46D3011BF5654D0037BD46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB46D2E41BF5654D0037BD46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB46D2EB1BF5654D0037BD46;
+			remoteInfo = TagMac;
+		};
+		CB46D30C1BF5654D0037BD46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB46D2E41BF5654D0037BD46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB46D2EB1BF5654D0037BD46;
+			remoteInfo = TagMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB46D2EC1BF5654D0037BD46 /* TagMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB46D2EF1BF5654D0037BD46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB46D2FB1BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB46D3001BF5654D0037BD46 /* TagMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB46D3041BF5654D0037BD46 /* TagMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagMacTests.swift; sourceTree = "<group>"; };
+		CB46D3061BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB46D30B1BF5654D0037BD46 /* TagMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagMacUITests.swift; sourceTree = "<group>"; };
+		CB46D3111BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB46D3201BF568F70037BD46 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CBCC7BE91BF56DD30048646A /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		CBCC7BEA1BF56DD30048646A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CBCC7BEE1BF56DD30048646A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBCC7BF01BF56DD30048646A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBCC7BF51BF56DD30048646A /* TagMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TagMac.xcdatamodel; sourceTree = "<group>"; };
+		CBCC7BFE1BF56DE20048646A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CBCC7BFF1BF56DE50048646A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CBCC7C001BF56E130048646A /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		CBCC7C021BF56E1E0048646A /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		CBCC7C061BF56E2C0048646A /* MiddleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
+		CBF82C0E1BF5716600219536 /* TagMac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TagMac.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB46D2E91BF5654D0037BD46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB46D3211BF568F70037BD46 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D2FD1BF5654D0037BD46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D3081BF5654D0037BD46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB46D2E31BF5654D0037BD46 = {
+			isa = PBXGroup;
+			children = (
+				CB46D3221BF569160037BD46 /* Frameworks */,
+				CB46D2EE1BF5654D0037BD46 /* TagMac */,
+				CB46D3031BF5654D0037BD46 /* TagMacTests */,
+				CB46D30E1BF5654D0037BD46 /* TagMacUITests */,
+				CB46D2ED1BF5654D0037BD46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB46D2ED1BF5654D0037BD46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D2EC1BF5654D0037BD46 /* TagMac.app */,
+				CB46D3001BF5654D0037BD46 /* TagMacTests.xctest */,
+				CB46D30B1BF5654D0037BD46 /* TagMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB46D2EE1BF5654D0037BD46 /* TagMac */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D2EF1BF5654D0037BD46 /* AppDelegate.swift */,
+				CBCC7BE71BF56DD30048646A /* Classes */,
+				CBCC7BED1BF56DD30048646A /* Resources */,
+				CBF82C0D1BF5715900219536 /* Support Files */,
+			);
+			path = TagMac;
+			sourceTree = "<group>";
+		};
+		CB46D3031BF5654D0037BD46 /* TagMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D3041BF5654D0037BD46 /* TagMacTests.swift */,
+				CB46D3061BF5654D0037BD46 /* Info.plist */,
+			);
+			path = TagMacTests;
+			sourceTree = "<group>";
+		};
+		CB46D30E1BF5654D0037BD46 /* TagMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */,
+				CB46D3111BF5654D0037BD46 /* Info.plist */,
+			);
+			path = TagMacUITests;
+			sourceTree = "<group>";
+		};
+		CB46D3221BF569160037BD46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB46D3201BF568F70037BD46 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBCC7BE71BF56DD30048646A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CBCC7BE81BF56DD30048646A /* controller */,
+				CBCC7BEB1BF56DD30048646A /* model */,
+				CBCC7BEC1BF56DD30048646A /* view */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CBCC7BE81BF56DD30048646A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBCC7BEA1BF56DD30048646A /* MainViewController.swift */,
+				CBCC7BE91BF56DD30048646A /* ContentViewController.swift */,
+				CBCC7C001BF56E130048646A /* LeftViewController.swift */,
+				CBCC7C061BF56E2C0048646A /* MiddleViewController.swift */,
+				CBCC7C021BF56E1E0048646A /* RightViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CBCC7BEB1BF56DD30048646A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CBCC7BEC1BF56DD30048646A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CBCC7BED1BF56DD30048646A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBCC7BEF1BF56DD30048646A /* Main.storyboard */,
+				CBCC7BEE1BF56DD30048646A /* Assets.xcassets */,
+				CBCC7BF41BF56DD30048646A /* TagMac.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBF82C0D1BF5715900219536 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBF82C0E1BF5716600219536 /* TagMac.entitlements */,
+				CB46D2FB1BF5654D0037BD46 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB46D2EB1BF5654D0037BD46 /* TagMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB46D3141BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMac" */;
+			buildPhases = (
+				CB46D2E81BF5654D0037BD46 /* Sources */,
+				CB46D2E91BF5654D0037BD46 /* Frameworks */,
+				CB46D2EA1BF5654D0037BD46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagMac;
+			productName = TagMac;
+			productReference = CB46D2EC1BF5654D0037BD46 /* TagMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB46D2FF1BF5654D0037BD46 /* TagMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB46D3171BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMacTests" */;
+			buildPhases = (
+				CB46D2FC1BF5654D0037BD46 /* Sources */,
+				CB46D2FD1BF5654D0037BD46 /* Frameworks */,
+				CB46D2FE1BF5654D0037BD46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB46D3021BF5654D0037BD46 /* PBXTargetDependency */,
+			);
+			name = TagMacTests;
+			productName = TagMacTests;
+			productReference = CB46D3001BF5654D0037BD46 /* TagMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB46D30A1BF5654D0037BD46 /* TagMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB46D31A1BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMacUITests" */;
+			buildPhases = (
+				CB46D3071BF5654D0037BD46 /* Sources */,
+				CB46D3081BF5654D0037BD46 /* Frameworks */,
+				CB46D3091BF5654D0037BD46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB46D30D1BF5654D0037BD46 /* PBXTargetDependency */,
+			);
+			name = TagMacUITests;
+			productName = TagMacUITests;
+			productReference = CB46D30B1BF5654D0037BD46 /* TagMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB46D2E41BF5654D0037BD46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "OneBox Design";
+				TargetAttributes = {
+					CB46D2EB1BF5654D0037BD46 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 224G3733ES;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					CB46D2FF1BF5654D0037BD46 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CB46D2EB1BF5654D0037BD46;
+					};
+					CB46D30A1BF5654D0037BD46 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CB46D2EB1BF5654D0037BD46;
+					};
+				};
+			};
+			buildConfigurationList = CB46D2E71BF5654D0037BD46 /* Build configuration list for PBXProject "TagMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = CB46D2E31BF5654D0037BD46;
+			productRefGroup = CB46D2ED1BF5654D0037BD46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB46D2EB1BF5654D0037BD46 /* TagMac */,
+				CB46D2FF1BF5654D0037BD46 /* TagMacTests */,
+				CB46D30A1BF5654D0037BD46 /* TagMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB46D2EA1BF5654D0037BD46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCC7BF91BF56DD30048646A /* Assets.xcassets in Resources */,
+				CBCC7BFA1BF56DD30048646A /* Main.storyboard in Resources */,
+				CBF82C0F1BF5716600219536 /* TagMac.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D2FE1BF5654D0037BD46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D3091BF5654D0037BD46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB46D2E81BF5654D0037BD46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCC7BFD1BF56DD30048646A /* TagMac.xcdatamodeld in Sources */,
+				CBCC7BF71BF56DD30048646A /* ContentViewController.swift in Sources */,
+				CB46D2F01BF5654D0037BD46 /* AppDelegate.swift in Sources */,
+				CBCC7C011BF56E130048646A /* LeftViewController.swift in Sources */,
+				CBCC7BF81BF56DD30048646A /* MainViewController.swift in Sources */,
+				CBCC7C071BF56E2C0048646A /* MiddleViewController.swift in Sources */,
+				CBCC7C041BF56E1E0048646A /* RightViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D2FC1BF5654D0037BD46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB46D3051BF5654D0037BD46 /* TagMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB46D3071BF5654D0037BD46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB46D3101BF5654D0037BD46 /* TagMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB46D3021BF5654D0037BD46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB46D2EB1BF5654D0037BD46 /* TagMac */;
+			targetProxy = CB46D3011BF5654D0037BD46 /* PBXContainerItemProxy */;
+		};
+		CB46D30D1BF5654D0037BD46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB46D2EB1BF5654D0037BD46 /* TagMac */;
+			targetProxy = CB46D30C1BF5654D0037BD46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBCC7BEF1BF56DD30048646A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCC7BF01BF56DD30048646A /* Base */,
+				CBCC7BFE1BF56DE20048646A /* en */,
+				CBCC7BFF1BF56DE50048646A /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB46D3121BF5654D0037BD46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB46D3131BF5654D0037BD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB46D3151BF5654D0037BD46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TagMac/TagMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CB46D3161BF5654D0037BD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TagMac/TagMac.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		CB46D3181BF5654D0037BD46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagMac.app/Contents/MacOS/TagMac";
+			};
+			name = Debug;
+		};
+		CB46D3191BF5654D0037BD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagMac.app/Contents/MacOS/TagMac";
+			};
+			name = Release;
+		};
+		CB46D31B1BF5654D0037BD46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TagMac;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB46D31C1BF5654D0037BD46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TagMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TagMac;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB46D2E71BF5654D0037BD46 /* Build configuration list for PBXProject "TagMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB46D3121BF5654D0037BD46 /* Debug */,
+				CB46D3131BF5654D0037BD46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB46D3141BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB46D3151BF5654D0037BD46 /* Debug */,
+				CB46D3161BF5654D0037BD46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB46D3171BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB46D3181BF5654D0037BD46 /* Debug */,
+				CB46D3191BF5654D0037BD46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB46D31A1BF5654D0037BD46 /* Build configuration list for PBXNativeTarget "TagMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB46D31B1BF5654D0037BD46 /* Debug */,
+				CB46D31C1BF5654D0037BD46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CBCC7BF41BF56DD30048646A /* TagMac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBCC7BF51BF56DD30048646A /* TagMac.xcdatamodel */,
+			);
+			currentVersion = CBCC7BF51BF56DD30048646A /* TagMac.xcdatamodel */;
+			path = TagMac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB46D2E41BF5654D0037BD46 /* Project object */;
+}
