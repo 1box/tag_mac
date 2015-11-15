@@ -11,6 +11,11 @@
 		CB46D3051BF5654D0037BD46 /* TagMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D3041BF5654D0037BD46 /* TagMacTests.swift */; };
 		CB46D3101BF5654D0037BD46 /* TagMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */; };
 		CB46D3211BF568F70037BD46 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB46D3201BF568F70037BD46 /* CloudKit.framework */; };
+		CB6C23351BF8DD2D00DBB606 /* FileSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23341BF8DD2D00DBB606 /* FileSystemItem.swift */; };
+		CB6C233A1BF8E33900DBB606 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23361BF8E33900DBB606 /* Tag+CoreDataProperties.swift */; };
+		CB6C233B1BF8E33900DBB606 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23371BF8E33900DBB606 /* Tag.swift */; };
+		CB6C233C1BF8E33900DBB606 /* Context+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23381BF8E33900DBB606 /* Context+CoreDataProperties.swift */; };
+		CB6C233D1BF8E33900DBB606 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23391BF8E33900DBB606 /* Context.swift */; };
 		CBCC7BF71BF56DD30048646A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7BE91BF56DD30048646A /* ContentViewController.swift */; };
 		CBCC7BF81BF56DD30048646A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCC7BEA1BF56DD30048646A /* MainViewController.swift */; };
 		CBCC7BF91BF56DD30048646A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCC7BEE1BF56DD30048646A /* Assets.xcassets */; };
@@ -50,6 +55,11 @@
 		CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagMacUITests.swift; sourceTree = "<group>"; };
 		CB46D3111BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB46D3201BF568F70037BD46 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CB6C23341BF8DD2D00DBB606 /* FileSystemItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemItem.swift; sourceTree = "<group>"; };
+		CB6C23361BF8E33900DBB606 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB6C23371BF8E33900DBB606 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		CB6C23381BF8E33900DBB606 /* Context+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Context+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB6C23391BF8E33900DBB606 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		CBCC7BE91BF56DD30048646A /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		CBCC7BEA1BF56DD30048646A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CBCC7BEE1BF56DD30048646A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,6 +182,11 @@
 		CBCC7BEB1BF56DD30048646A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CB6C23341BF8DD2D00DBB606 /* FileSystemItem.swift */,
+				CB6C23361BF8E33900DBB606 /* Tag+CoreDataProperties.swift */,
+				CB6C23371BF8E33900DBB606 /* Tag.swift */,
+				CB6C23381BF8E33900DBB606 /* Context+CoreDataProperties.swift */,
+				CB6C23391BF8E33900DBB606 /* Context.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -345,11 +360,16 @@
 			files = (
 				CBCC7BFD1BF56DD30048646A /* TagMac.xcdatamodeld in Sources */,
 				CBCC7BF71BF56DD30048646A /* ContentViewController.swift in Sources */,
+				CB6C233B1BF8E33900DBB606 /* Tag.swift in Sources */,
 				CB46D2F01BF5654D0037BD46 /* AppDelegate.swift in Sources */,
+				CB6C23351BF8DD2D00DBB606 /* FileSystemItem.swift in Sources */,
+				CB6C233C1BF8E33900DBB606 /* Context+CoreDataProperties.swift in Sources */,
 				CBCC7C011BF56E130048646A /* LeftViewController.swift in Sources */,
 				CBCC7BF81BF56DD30048646A /* MainViewController.swift in Sources */,
 				CBCC7C071BF56E2C0048646A /* MiddleViewController.swift in Sources */,
+				CB6C233D1BF8E33900DBB606 /* Context.swift in Sources */,
 				CBCC7C041BF56E1E0048646A /* RightViewController.swift in Sources */,
+				CB6C233A1BF8E33900DBB606 /* Tag+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

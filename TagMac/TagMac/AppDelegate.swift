@@ -14,7 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        
+//        self.window.styleMask = NSBorderlessWindowMask
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
