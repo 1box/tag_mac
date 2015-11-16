@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB361D501BF9DEB900B62159 /* EvernoteSDKMac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBE97BE41BF9DB54009325AF /* EvernoteSDKMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB361D531BF9DF2300B62159 /* EvernoteSDKMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE97BE41BF9DB54009325AF /* EvernoteSDKMac.framework */; };
+		CB361D591BF9F27C00B62159 /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB361D581BF9F27C00B62159 /* TagManager.swift */; };
+		CB361D5D1BF9F45B00B62159 /* EvernoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB361D5C1BF9F45B00B62159 /* EvernoteManager.swift */; };
 		CB46D2F01BF5654D0037BD46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D2EF1BF5654D0037BD46 /* AppDelegate.swift */; };
 		CB46D3051BF5654D0037BD46 /* TagMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D3041BF5654D0037BD46 /* TagMacTests.swift */; };
 		CB46D3101BF5654D0037BD46 /* TagMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */; };
 		CB46D3211BF568F70037BD46 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB46D3201BF568F70037BD46 /* CloudKit.framework */; };
+		CB64E3A91BFA039500983121 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64E3831BFA036E00983121 /* Alamofire.framework */; };
+		CB64E3AA1BFA039F00983121 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64E39C1BFA037B00983121 /* XCGLogger.framework */; };
 		CB6C23351BF8DD2D00DBB606 /* FileSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23341BF8DD2D00DBB606 /* FileSystemItem.swift */; };
 		CB6C233A1BF8E33900DBB606 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23361BF8E33900DBB606 /* Tag+CoreDataProperties.swift */; };
 		CB6C233B1BF8E33900DBB606 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C23371BF8E33900DBB606 /* Tag.swift */; };
@@ -32,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB361D511BF9DECD00B62159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43741863170ADB2400D2BE51;
+			remoteInfo = EvernoteSDKMac;
+		};
 		CB46D3011BF5654D0037BD46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB46D2E41BF5654D0037BD46 /* Project object */;
@@ -46,6 +59,146 @@
 			remoteGlobalIDString = CB46D2EB1BF5654D0037BD46;
 			remoteInfo = TagMac;
 		};
+		CB64E37E1BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		CB64E3801BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		CB64E3821BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		CB64E3841BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		CB64E3861BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		CB64E3881BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		CB64E38A1BFA036E00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		CB64E3991BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE4519D76F280068C3A7;
+			remoteInfo = "XCGLogger (iOS)";
+		};
+		CB64E39B1BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 554DF41719D76FE7005708BE;
+			remoteInfo = "XCGLogger (OS X)";
+		};
+		CB64E39D1BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70CB94201B99E728007802FF;
+			remoteInfo = "XCGLogger (watchOS)";
+		};
+		CB64E39F1BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5515A3DF1BA119FA0047BA31;
+			remoteInfo = "XCGLogger (tvOS)";
+		};
+		CB64E3A11BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE5019D76F280068C3A7;
+			remoteInfo = "XCGLoggerTests (iOS)";
+		};
+		CB64E3A31BFA037B00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55BB1F011B79DC7500709779;
+			remoteInfo = "XCGLoggerTests (OS X)";
+		};
+		CB64E3A51BFA038700983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 554DF41619D76FE7005708BE;
+			remoteInfo = "XCGLogger (OS X)";
+		};
+		CB64E3A71BFA038C00983121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD67C0A1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		CBE97BE11BF9DB54009325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BB3D1AD1524ED96001C4534;
+			remoteInfo = EvernoteSDK;
+		};
+		CBE97BE31BF9DB54009325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43741864170ADB2400D2BE51;
+			remoteInfo = "EvernoteSDK-Mac";
+		};
+		CBE97BE51BF9DB54009325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BB3D26E1524EF37001C4534;
+			remoteInfo = "SampleApp-iOS";
+		};
+		CBE97BE71BF9DB54009325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 437418AC170ADCD600D2BE51;
+			remoteInfo = "SampleApp-Mac";
+		};
+		CBE97BE91BF9DB54009325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BDBBC431550A11A003E6681;
+			remoteInfo = UnitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,12 +208,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CB361D501BF9DEB900B62159 /* EvernoteSDKMac.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB361D581BF9F27C00B62159 /* TagManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagManager.swift; sourceTree = "<group>"; };
+		CB361D5C1BF9F45B00B62159 /* EvernoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvernoteManager.swift; sourceTree = "<group>"; };
 		CB46D2EC1BF5654D0037BD46 /* TagMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB46D2EF1BF5654D0037BD46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB46D2FB1BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +227,8 @@
 		CB46D30F1BF5654D0037BD46 /* TagMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagMacUITests.swift; sourceTree = "<group>"; };
 		CB46D3111BF5654D0037BD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB46D3201BF568F70037BD46 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = XCGLogger/XCGLogger/Library/XCGLogger.xcodeproj; sourceTree = "<group>"; };
 		CB6C23341BF8DD2D00DBB606 /* FileSystemItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemItem.swift; sourceTree = "<group>"; };
 		CB6C23361BF8E33900DBB606 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CB6C23371BF8E33900DBB606 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -90,6 +248,7 @@
 		CBE97B971BF975C6009325AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CBE97B991BF975D2009325AF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CBE97B9B1BF9762D009325AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EvernoteSDK.xcodeproj; path = "evernote-sdk-mac-swift/EvernoteSDK.xcodeproj"; sourceTree = "<group>"; };
 		CBF82C0E1BF5716600219536 /* TagMac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TagMac.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +257,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB64E3AA1BFA039F00983121 /* XCGLogger.framework in Frameworks */,
+				CB64E3A91BFA039500983121 /* Alamofire.framework in Frameworks */,
+				CB361D531BF9DF2300B62159 /* EvernoteSDKMac.framework in Frameworks */,
 				CBE97B9C1BF9762D009325AF /* StoreKit.framework in Frameworks */,
 				CBE97B9A1BF975D2009325AF /* WebKit.framework in Frameworks */,
 				CBE97B981BF975C6009325AF /* Security.framework in Frameworks */,
@@ -123,6 +285,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB361D571BF9F27300B62159 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				CB361D581BF9F27C00B62159 /* TagManager.swift */,
+				CB361D5C1BF9F45B00B62159 /* EvernoteManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 		CB46D2E31BF5654D0037BD46 = {
 			isa = PBXGroup;
 			children = (
@@ -186,9 +357,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB64E3751BFA036E00983121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB64E37F1BFA036E00983121 /* Alamofire.framework */,
+				CB64E3811BFA036E00983121 /* Alamofire iOS Tests.xctest */,
+				CB64E3831BFA036E00983121 /* Alamofire.framework */,
+				CB64E3851BFA036E00983121 /* Alamofire OSX Tests.xctest */,
+				CB64E3871BFA036E00983121 /* Alamofire.framework */,
+				CB64E3891BFA036E00983121 /* Alamofire tvOS Tests.xctest */,
+				CB64E38B1BFA036E00983121 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB64E3911BFA037B00983121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB64E39A1BFA037B00983121 /* XCGLogger.framework */,
+				CB64E39C1BFA037B00983121 /* XCGLogger.framework */,
+				CB64E39E1BFA037B00983121 /* XCGLogger.framework */,
+				CB64E3A01BFA037B00983121 /* XCGLogger.framework */,
+				CB64E3A21BFA037B00983121 /* XCGLoggerTests (iOS).xctest */,
+				CB64E3A41BFA037B00983121 /* XCGLoggerTests (OS X).xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CBCC7BE71BF56DD30048646A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB361D571BF9F27300B62159 /* manager */,
 				CBCC7BE81BF56DD30048646A /* controller */,
 				CBCC7BEB1BF56DD30048646A /* model */,
 				CBCC7BEC1BF56DD30048646A /* view */,
@@ -250,6 +449,9 @@
 		CBE978801BF958C9009325AF /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */,
+				CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */,
+				CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -259,6 +461,18 @@
 			children = (
 			);
 			path = bridges;
+			sourceTree = "<group>";
+		};
+		CBE97BDA1BF9DB54009325AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBE97BE21BF9DB54009325AF /* libEvernoteSDK.a */,
+				CBE97BE41BF9DB54009325AF /* EvernoteSDKMac.framework */,
+				CBE97BE61BF9DB54009325AF /* SampleApp-iOS.app */,
+				CBE97BE81BF9DB54009325AF /* SampleApp-Mac.app */,
+				CBE97BEA1BF9DB54009325AF /* UnitTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CBF82C0D1BF5715900219536 /* Support Files */ = {
@@ -285,6 +499,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				CB64E3A81BFA038C00983121 /* PBXTargetDependency */,
+				CB64E3A61BFA038700983121 /* PBXTargetDependency */,
+				CB361D521BF9DECD00B62159 /* PBXTargetDependency */,
 			);
 			name = TagMac;
 			productName = TagMac;
@@ -371,6 +588,20 @@
 			mainGroup = CB46D2E31BF5654D0037BD46;
 			productRefGroup = CB46D2ED1BF5654D0037BD46 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB64E3751BFA036E00983121 /* Products */;
+					ProjectRef = CB64E3741BFA036E00983121 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = CBE97BDA1BF9DB54009325AF /* Products */;
+					ProjectRef = CBE97BD91BF9DB54009325AF /* EvernoteSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = CB64E3911BFA037B00983121 /* Products */;
+					ProjectRef = CB64E3901BFA037B00983121 /* XCGLogger.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CB46D2EB1BF5654D0037BD46 /* TagMac */,
@@ -379,6 +610,135 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB64E37F1BFA036E00983121 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CB64E37E1BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3811BFA036E00983121 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = CB64E3801BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3831BFA036E00983121 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CB64E3821BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3851BFA036E00983121 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = CB64E3841BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3871BFA036E00983121 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CB64E3861BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3891BFA036E00983121 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = CB64E3881BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E38B1BFA036E00983121 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = CB64E38A1BFA036E00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E39A1BFA037B00983121 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CB64E3991BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E39C1BFA037B00983121 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CB64E39B1BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E39E1BFA037B00983121 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CB64E39D1BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3A01BFA037B00983121 /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CB64E39F1BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3A21BFA037B00983121 /* XCGLoggerTests (iOS).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (iOS).xctest";
+			remoteRef = CB64E3A11BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CB64E3A41BFA037B00983121 /* XCGLoggerTests (OS X).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (OS X).xctest";
+			remoteRef = CB64E3A31BFA037B00983121 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBE97BE21BF9DB54009325AF /* libEvernoteSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEvernoteSDK.a;
+			remoteRef = CBE97BE11BF9DB54009325AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBE97BE41BF9DB54009325AF /* EvernoteSDKMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EvernoteSDKMac.framework;
+			remoteRef = CBE97BE31BF9DB54009325AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBE97BE61BF9DB54009325AF /* SampleApp-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "SampleApp-iOS.app";
+			remoteRef = CBE97BE51BF9DB54009325AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBE97BE81BF9DB54009325AF /* SampleApp-Mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "SampleApp-Mac.app";
+			remoteRef = CBE97BE71BF9DB54009325AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBE97BEA1BF9DB54009325AF /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = CBE97BE91BF9DB54009325AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB46D2EA1BF5654D0037BD46 /* Resources */ = {
@@ -414,6 +774,8 @@
 			files = (
 				CBCC7BFD1BF56DD30048646A /* TagMac.xcdatamodeld in Sources */,
 				CBCC7BF71BF56DD30048646A /* ContentViewController.swift in Sources */,
+				CB361D591BF9F27C00B62159 /* TagManager.swift in Sources */,
+				CB361D5D1BF9F45B00B62159 /* EvernoteManager.swift in Sources */,
 				CB6C233B1BF8E33900DBB606 /* Tag.swift in Sources */,
 				CB46D2F01BF5654D0037BD46 /* AppDelegate.swift in Sources */,
 				CB6C23351BF8DD2D00DBB606 /* FileSystemItem.swift in Sources */,
@@ -446,6 +808,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB361D521BF9DECD00B62159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EvernoteSDKMac;
+			targetProxy = CB361D511BF9DECD00B62159 /* PBXContainerItemProxy */;
+		};
 		CB46D3021BF5654D0037BD46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB46D2EB1BF5654D0037BD46 /* TagMac */;
@@ -455,6 +822,16 @@
 			isa = PBXTargetDependency;
 			target = CB46D2EB1BF5654D0037BD46 /* TagMac */;
 			targetProxy = CB46D30C1BF5654D0037BD46 /* PBXContainerItemProxy */;
+		};
+		CB64E3A61BFA038700983121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCGLogger (OS X)";
+			targetProxy = CB64E3A51BFA038700983121 /* PBXContainerItemProxy */;
+		};
+		CB64E3A81BFA038C00983121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire OSX";
+			targetProxy = CB64E3A71BFA038C00983121 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -567,7 +944,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "evernote-bridge-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -586,7 +963,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneboxapp.TagMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "evernote-bridge-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

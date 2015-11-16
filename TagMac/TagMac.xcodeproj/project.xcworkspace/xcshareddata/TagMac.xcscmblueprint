@@ -4,13 +4,17 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : 0,
+    "CD1557C3AE966BEDF3490D85F9712687801B146C" : 0,
     "C2704770743D122646B3013D61962510236CF2BB" : 0,
-    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : 0
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D96FFE3F-4045-4296-98AE-E3B729827960",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : "tag_mac\/",
+    "CD1557C3AE966BEDF3490D85F9712687801B146C" : "tag_mac\/Common\/modules\/XCGLogger\/",
     "C2704770743D122646B3013D61962510236CF2BB" : "tag_mac\/Common\/modules\/evernote-sdk-mac\/",
-    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : "tag_mac\/"
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "tag_mac\/Common\/modules\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TagMac",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -22,9 +26,19 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "16CF3B23E82F5B303C3322CE11C1895FF85F4A17"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:evernote\/evernote-sdk-mac.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C2704770743D122646B3013D61962510236CF2BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:DaveWoodCom\/XCGLogger.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CD1557C3AE966BEDF3490D85F9712687801B146C"
     }
   ]
 }

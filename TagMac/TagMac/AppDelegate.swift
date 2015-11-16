@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import EvernoteSDKMac111
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -16,23 +15,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
 //        self.window.styleMask = NSBorderlessWindowMask
         
-        self.registerEvernote()
+        EvernoteManager.sharedInstance.validationEvernoteDev()
     }
     
-    func registerEvernote() {
-        // Fill in the consumer key and secret with the values that you received from Evernote
-        // To get an API key, visit http://dev.evernote.com/documentation/cloud/
-        let evernoteHost = BootstrapServerBaseURLStringCN;
-        let consumerKey = "kimirius"
-        let consumerSecret = "8681c0a901f72b82"
-        
-        EvernoteSession.setSharedSessionHost(evernoteHost, consumerKey: consumerKey, consumerSecret: consumerSecret)
-    }
-
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+//        EvernoteSession.sharedSession().handleDidBecomeActive()
+    }
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {

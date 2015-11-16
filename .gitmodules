@@ -1,0 +1,9 @@
+[submodule "Common/modules/evernote-sdk-mac-swift"]
+	path = Common/modules/evernote-sdk-mac-swift
+	url = git@github.com:1box/evernote-sdk-mac-swift.git
+[submodule "Common/modules/Alamofire"]
+	path = Common/modules/Alamofire
+	url = git@github.com:Alamofire/Alamofire.git
+[submodule "Common/modules/XCGLogger"]
+	path = Common/modules/XCGLogger
+	url = git@github.com:DaveWoodCom/XCGLogger.git
