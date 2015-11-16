@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "16CF3B23E82F5B303C3322CE11C1895FF85F4A17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C2704770743D122646B3013D61962510236CF2BB" : 0,
+    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D96FFE3F-4045-4296-98AE-E3B729827960",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C2704770743D122646B3013D61962510236CF2BB" : "tag_mac\/Common\/modules\/evernote-sdk-mac\/",
+    "16CF3B23E82F5B303C3322CE11C1895FF85F4A17" : "tag_mac\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TagMac",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TagMac\/TagMac.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:1box\/tag_mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "16CF3B23E82F5B303C3322CE11C1895FF85F4A17"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:evernote\/evernote-sdk-mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C2704770743D122646B3013D61962510236CF2BB"
+    }
+  ]
+}

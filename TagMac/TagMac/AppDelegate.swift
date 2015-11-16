@@ -16,6 +16,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
 //        self.window.styleMask = NSBorderlessWindowMask
+        
+        self.registerEvernote()
+    }
+    
+    func registerEvernote() {
+        // Fill in the consumer key and secret with the values that you received from Evernote
+        // To get an API key, visit http://dev.evernote.com/documentation/cloud/
+        let consumerKey = "kimirius"
+        let consumerSecret = "8681c0a901f72b82"
+        
+        // set up Evernote session singleton
+//        [EvernoteSession setSharedSessionHost:EVERNOTE_HOST
+//            consumerKey:CONSUMER_KEY
+//            consumerSecret:CONSUMER_SECRET];
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

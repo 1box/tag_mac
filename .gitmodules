@@ -1,0 +1,3 @@
+[submodule "Common/modules/evernote-sdk-mac"]
+	path = Common/modules/evernote-sdk-mac
+	url = git@github.com:evernote/evernote-sdk-mac.git
