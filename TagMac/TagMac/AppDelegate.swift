@@ -7,11 +7,10 @@
 //
 
 import Cocoa
+import EvernoteSDKMac111
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
@@ -23,13 +22,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func registerEvernote() {
         // Fill in the consumer key and secret with the values that you received from Evernote
         // To get an API key, visit http://dev.evernote.com/documentation/cloud/
+        let evernoteHost = BootstrapServerBaseURLStringCN;
         let consumerKey = "kimirius"
         let consumerSecret = "8681c0a901f72b82"
         
-        // set up Evernote session singleton
-//        [EvernoteSession setSharedSessionHost:EVERNOTE_HOST
-//            consumerKey:CONSUMER_KEY
-//            consumerSecret:CONSUMER_SECRET];
+        EvernoteSession.setSharedSessionHost(evernoteHost, consumerKey: consumerKey, consumerSecret: consumerSecret)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
