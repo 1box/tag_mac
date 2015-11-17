@@ -18,6 +18,30 @@ class MainViewController: NSSplitViewController {
             self.view.shouldDrawColor()
         #endif
     }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+//        EvernoteManager.sharedInstance.checkAuthToEvernote({ (error: NSError!) in
+//            if error != nil {
+//                log.debug("main vc check auth success.")
+//            } else {
+//                log.debug("main vc check auth fail with error:\(error).")
+//            }
+//        })
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+//        EvernoteManager.sharedInstance.checkAuthToEvernote({ (error: NSError!) in
+//            if error != nil {
+//                log.debug("main vc check auth success.")
+//            } else {
+//                log.debug("main vc check auth fail with error:\(error).")
+//            }
+//        })       
+    }
 
     override var representedObject: AnyObject? {
         didSet {

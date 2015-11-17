@@ -27,7 +27,7 @@ class EvernoteManager: NSObject {
         
         // Fill in the consumer key and secret with the values that you received from Evernote
         // To get an API key, visit http://dev.evernote.com/documentation/cloud/
-        let evernoteHost = BootstrapServerBaseURLStringCN;
+        let evernoteHost = BootstrapServerBaseURLStringSandbox // BootstrapServerBaseURLStringCN
         let consumerKey = "kimirius"
         let consumerSecret = "8681c0a901f72b82"
         
@@ -43,6 +43,7 @@ class EvernoteManager: NSObject {
         if EvernoteSession.sharedSession().isAuthenticated == false {
             self.authToEvernote(handler)
         } else {
+            self.fetchTagsFromEvernote()
             handler(nil)
         }
     }
@@ -51,13 +52,18 @@ class EvernoteManager: NSObject {
      show authenticate with completion handler
      */
     func authToEvernote(handler: EvernoteAuthCompletionHandler!) {
+        
+//        let keyWindow = NSApplication.sharedApplication().keyWindow
+//        let mainWindow = NSApplication.sharedApplication().mainWindow
+//        let windows = NSApplication.sharedApplication().windows
+        
         EvernoteSession.sharedSession().authenticateWithWindow(
-            NSApplication.sharedApplication().mainWindow,
+            NSApplication.sharedApplication().windows[0],
             completionHandler: { (error: NSError!) in
                 
                 if (error != nil || EvernoteSession.sharedSession().isAuthenticated == false) {
                     // authentication failed :(
-                    print("authentication failed with error:\(error)")
+                    log.debug("authentication failed with error:\(error)")
                 } else {
                     // authentication succeeded :)
                     self.fetchTagsFromEvernote()
@@ -68,6 +74,13 @@ class EvernoteManager: NSObject {
     }
     
     func fetchTagsFromEvernote() {
-        
+//        let noteStore = EvernoteNoteStore.businessNoteStore()
+//        noteStore.listTagsWithSuccess(
+//            { (tags: [AnyObject]!) in
+//                log.debug("tags:\(tags) in noteStore:\(noteStore)")
+//            },
+//            failure: { (error: NSError!) in
+//                log.debug("list tags failed with error:\(error)")
+//        })
     }
 }

@@ -7,6 +7,9 @@
 //
 
 import Cocoa
+import XCGLogger
+
+let log = XCGLogger.defaultInstance()
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,7 +18,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
 //        self.window.styleMask = NSBorderlessWindowMask
         
+//        let keyWindow = NSApplication.sharedApplication().keyWindow
+//        let mainWindow = NSApplication.sharedApplication().mainWindow
+//        let windows = NSApplication.sharedApplication().windows
+        
         EvernoteManager.sharedInstance.validationEvernoteDev()
+        
+        EvernoteManager.sharedInstance.checkAuthToEvernote({ (error: NSError!) in
+            if error != nil {
+                log.debug("main vc check auth success.")
+            } else {
+                log.debug("main vc check auth fail with error:\(error).")
+            }
+        })
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
