@@ -74,13 +74,17 @@ class EvernoteManager: NSObject {
     }
     
     func fetchTagsFromEvernote() {
-//        let noteStore = EvernoteNoteStore.businessNoteStore()
-//        noteStore.listTagsWithSuccess(
-//            { (tags: [AnyObject]!) in
-//                log.debug("tags:\(tags) in noteStore:\(noteStore)")
-//            },
-//            failure: { (error: NSError!) in
-//                log.debug("list tags failed with error:\(error)")
-//        })
+        let noteStore = EvernoteNoteStore.init(session: EvernoteSession.sharedSession()!)
+//        noteStore.setIsBusiness(false)
+//        noteStore.setLinkedNotebook(nil)
+        noteStore.listTagsWithSuccess(
+            { (tags: [AnyObject]!) in
+                log.debug("tags:\(tags) in noteStore:\(noteStore)")
+                
+                TagManager.sharedInstance.saveTagsToDB(tags as NSArray!)
+            },
+            failure: { (error: NSError!) in
+                log.debug("list tags failed with error:\(error)")
+        })
     }
 }

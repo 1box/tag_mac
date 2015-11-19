@@ -71,7 +71,7 @@ public class FileSystemItem: NSObject {
     
     public func fullPath() -> NSString {
         // If no parent, return our own relative path
-        print("relativePath: \(relativePath)")
+//        print("relativePath: \(relativePath)")
         if let par = parent {
             // recurse up the hierarchy, prepending each parent’s path
             return par.fullPath().stringByAppendingPathComponent(relativePath as String)

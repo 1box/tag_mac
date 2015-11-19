@@ -21,14 +21,6 @@ class MainViewController: NSSplitViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        
-//        EvernoteManager.sharedInstance.checkAuthToEvernote({ (error: NSError!) in
-//            if error != nil {
-//                log.debug("main vc check auth success.")
-//            } else {
-//                log.debug("main vc check auth fail with error:\(error).")
-//            }
-//        })
     }
     
     override func viewDidAppear() {

@@ -9,6 +9,10 @@
 import Cocoa
 
 class RightViewController: NSViewController {
+    
+    @IBOutlet weak var addButton: NSButton!
+    
+    @IBOutlet weak var tagManager: TagManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -23,7 +23,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //        let windows = NSApplication.sharedApplication().windows
         
         EvernoteManager.sharedInstance.validationEvernoteDev()
-        
         EvernoteManager.sharedInstance.checkAuthToEvernote({ (error: NSError!) in
             if error != nil {
                 log.debug("main vc check auth success.")
